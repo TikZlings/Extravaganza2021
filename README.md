@@ -45,3 +45,11 @@ Music Uriah Heep Lady in black https://youtu.be/N0H48bpJziQ 0.00-0:27
 
 Background https://i.insider.com/5a20871af914c354018b7289?width=2400
 
+### „Owl Strechting Time“ 
+
+inspired by episode 4 of „Monty Python“
+
+music: entweder das Intro zur Serie oder (für Eingeweihte besser und auch leichter umzusetzen) „Jerusalem“, das Leitmotiv der Folge.
+
+
+
