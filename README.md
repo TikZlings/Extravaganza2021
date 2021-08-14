@@ -31,6 +31,16 @@ Some ideas for future scenes (just to make sure I don't forget them again...)
  
 - Fashion show with the newest bearwear collection
 
+- inspired by a stoty @barbara told https://chat.stackexchange.com/transcript/message/58888376#58888376 : a tikzlings could walk down a street carrying a boom box. In the middle, the tikzlings sets down the box and some classic music starts
+
+- Paulo shared the following anecdote with me:
+
+We have an anecdote here along these lines, let me try to tell it, never done it in another language. :)
+
+Two friends decided to go fishing. One says, "let's get our fishing equipment, and don't forget the cachaça". "Oh no", said the other, "we won't drink during our fishing". "Oh we are taking cachaça as a medicine! If a snake bites us, we can drink cachaça as a means to anaesthetise the region", his friend explained. "Oh that's clever!". "Indeed it is! Don't worry, I bring cachaça".
+
+The other day, they met at some point. "Hey, how's it doing?". "Good! Ready for fishing?". "Yes, I am! By the way, why are you carrying two baskets?". "Oh", said the friend, "one basket holds the cachaça, to help us with snake bites!". "Ah that's sensible. And what's in the other basket?". "Well", said the friend, "I am bringing a spare snake just in case there's none there". :D
+
 ## Ideas Gert Fischer
 
 (see also scan for setup)
