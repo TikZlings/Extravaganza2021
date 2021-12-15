@@ -9,7 +9,9 @@
 	
 \begin{frame}
   \begin{tikzpicture}[remember picture, overlay]
+    \node[rotate=-20] at (14-0.027*\thepage,0.007*\thepage) {\includegraphics[width=3cm]{rudolf-duck-UF}};
     \penguin[santa,yshift=-3.9cm,xshift=1.5cm]
+    \snowman[tophat,yshift=-3.5cm,xshift=9.5cm]
     \begin{scope}
       \clip (current page.south west) rectangle ++(6,3);
       \node at (33-0.1*\thepage,-4) {\includegraphics[height=1.5cm]{Packages}};
@@ -18,10 +20,10 @@
       \clip (current page.south east) rectangle ++(-6,3);
       \node at (33-0.1*\thepage,-4) {\includegraphics[height=1.08cm]{Packages_inside}};
     \end{scope}    
-    \node at (6,-3.5) {\includegraphics[width=5cm]{wrapping}};   
-    \node[white,text width=.7\paperwidth,font=\tiny,align=center] at ([yshift=-0.35cm]current page.north) {Image source: \url{https://commons.wikimedia.org/wiki/File:Snowy_winter_landscape_-_Riisitunturi_National_Park_-_Posio,_Finland_-_14_March_2016.jpg}};  
+    \node at (6,-3.2) {\includegraphics[width=5cm]{wrapping2}};   
+    \node[rotate=90,white,text width=.7\paperwidth,font=\tiny,align=center] at ([xshift=-0.35cm]current page.east) {Image source: \url{https://commons.wikimedia.org/wiki/File:Snowy_winter_landscape_-_Riisitunturi_National_Park_-_Posio,_Finland_-_14_March_2016.jpg}};  
   \end{tikzpicture}
-%  \pause[600]
+  \pause[600]
 \end{frame}	
 	
 \end{document}
