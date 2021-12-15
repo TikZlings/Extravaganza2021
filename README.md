@@ -1,8 +1,21 @@
-# Extravaganza2021
+# The Great TikZlings Christmas Extravaganza 2021
 
-## Ideas from last year
+This repository contains the souce code of the Great TikZlings Extravanganza 2021, created by ...
 
-# More Ideas
+The full video is available from ...
+
+## North Pole
+
+<img align="right" src="./samcarter/NorthPole/NorthPole.png" height="100">
+
+- Topic: Gift wrapping at the North Pole
+
+- Music: https://www.youtube.com/watch?v=tyTOCC_88jw (Santa's First Rush (Cinematic Christmas Adventure) by soundbay)
+
+- Source Code: [./samcarter/NorthPole/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/NorthPole)
+
+
+# Ideas from last year
 
 
 Some ideas for future scenes (just to make sure I don't forget them again...)
