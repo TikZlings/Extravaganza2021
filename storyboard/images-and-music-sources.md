@@ -37,3 +37,8 @@ https://youtu.be/PgK-dIPMIp4
 
 15. ABBA - Happy New Year (Video) - Bing Video 0:47 1:10
 https://youtu.be/3Uo0JAUWijM
+
+16. North Pole
+Image credit: https://commons.wikimedia.org/wiki/File:Snowy_winter_landscape_-_Riisitunturi_National_Park_-_Posio,_Finland_-_14_March_2016.jpg
+Music: https://www.youtube.com/watch?v=tyTOCC_88jw (Santa's First Rush (Cinematic Christmas Adventure) by soundbay)
+
