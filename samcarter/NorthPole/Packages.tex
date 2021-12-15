@@ -1,0 +1,228 @@
+% Package code from https://tex.stackexchange.com/a/150675/36296
+
+\documentclass[border=0.125cm]{standalone}
+\usepackage{tikz}
+
+
+\tikzset{gift box/.cd,
+  x/.store in=\gbx,
+  y/.store in=\gby,
+  z/.store in=\gbz,
+  x=0,y=0,z=0
+}
+\tikzdeclarecoordinatesystem{gift box}{%
+  \tikzset{x=(-20:1cm),y=(200:1cm),z=(90:1cm)}%
+  \tikzset{gift box/.cd, #1}%
+  \pgfpointxyz{\gbx*(.9+\gbz/20)}{\gby*(.9+\gbz/20)}{\gbz*(1+\gbx/10+\gby/10)}%
+}
+
+\tikzset{wrapping paper/.style={
+    bottom color=red!75!black, top color=red!50!black,
+  },
+  ribbon/.style={
+    bottom color=yellow!75!orange, top color=yellow!50!orange,
+  },
+  sheen/.style={
+    left color=black, right color=white, opacity=0.25
+  },
+  highlight/.style={
+    draw=white,
+    opacity=1/100,
+    line width=#1,
+    line cap=round
+  },
+  lowlight/.style={
+    draw=black,
+    opacity=1/80,
+    line width=#1,
+    line cap=round,
+    line join=round
+  }
+}
+
+\newcommand{\gift}{
+\begin{tikzpicture}
+
+\foreach \l in {1,...,20}
+  \path [lowlight=\l/3] 
+       (gift box cs:x=-1, y= 1, z=-1) 
+    -- (gift box cs:x= 1, y= 1, z=-1) 
+    -- (gift box cs:x= 1, y=-1, z=-1) 
+    -- (gift box cs:x= 1, y=-1, z=-1)
+    -- cycle;
+
+
+
+\path [wrapping paper]
+     (gift box cs:x=-1, y= 1, z=-1)
+  -- (gift box cs:x=-1, y= 1, z=1)
+  -- (gift box cs:x= 1, y= 1, z=1)
+  -- (gift box cs:x= 1, y=-1, z=1)
+  -- (gift box cs:x= 1, y=-1, z=-1)
+  -- (gift box cs:x= 1, y= 1, z=-1)
+  -- cycle;
+
+
+\foreach \n/\o in {.25/1, .33/.5}
+  \path [ribbon, opacity=\o] 
+       (gift box cs:x=1, y=-\n, z=-1)
+    -- (gift box cs:x=1, y=-\n, z=1)
+    -- (gift box cs:x=1, y= \n, z=1)
+    -- (gift box cs:x=1, y= \n, z=-1)
+    -- cycle
+       (gift box cs:x=-\n, y=1, z=-1)
+    -- (gift box cs:x=-\n, y=1, z=1)
+    -- (gift box cs:x= \n, y=1, z=1)
+    -- (gift box cs:x= \n, y=1, z=-1)
+    -- cycle;
+
+\path [sheen]
+     (gift box cs:x=1,y=-1,z=-1)
+  -- (gift box cs:x=1,y=-1,z=1)
+  -- (gift box cs:x=1, y=1,z=1)
+  -- (gift box cs:x=1, y=1,z=-1)
+  -- cycle;
+
+\path  [sheen]
+     (gift box cs:x=-1,y=1,z=-1)
+  -- (gift box cs:x=-1,y=1,z=1)
+  -- (gift box cs:x=1, y=1,z=1)
+  -- (gift box cs:x=1, y=1,z=-1)
+  -- cycle;
+
+\begin{scope}
+
+\path [clip]
+     (gift box cs:x=-1, y= 1, z=-1)
+  -- (gift box cs:x=-1, y= 1, z= 1)
+  -- (gift box cs:x= 1, y= 1, z= 1)
+  -- (gift box cs:x= 1, y=-1, z= 1)
+  -- (gift box cs:x= 1, y=-1, z=-1)
+  -- (gift box cs:x= 1, y= 1, z=-1)
+  -- cycle;
+
+\foreach \l in {1,...,10}{
+  \path [lowlight=\l/3] 
+       (gift box cs:x=-1, y= 1, z=1) 
+    -- (gift box cs:x=-1, y= 1, z=-1) 
+    -- (gift box cs:x= 1, y= 1, z=-1) 
+    -- (gift box cs:x= 1, y=-1, z=-1) 
+    -- (gift box cs:x= 1, y=-1, z=1)
+       (gift box cs:x=1, y=1,z=-1) 
+    -- (gift box cs:x=1, y=1,z= 1);
+
+  \path [lowlight=\l/2]
+       (gift box cs:x=-1.05, y= 1.05, z=1) 
+    -- (gift box cs:x=-1.05, y= 1.05, z=.5)
+    -- (gift box cs:x= 1.05, y= 1.05, z=.5)
+    -- (gift box cs:x= 1.05, y=-1.05, z=.5)
+    -- (gift box cs:x= 1.05, y=-1.05, z=1);
+}
+\end{scope}
+
+
+\path [wrapping paper]
+     (gift box cs:x=-1.05, y=-1.05, z=1)
+  -- (gift box cs:x=-1.05, y= 1.05, z=1)
+  -- (gift box cs:x=-1.05, y= 1.05, z=.5)
+  -- (gift box cs:x= 1.05, y= 1.05, z=.5)
+  -- (gift box cs:x= 1.05, y=-1.05, z=.5)
+  -- (gift box cs:x= 1.05, y=-1.05, z=1)
+  -- cycle;
+
+
+
+\foreach \n/\o in {.33/.5, .25/1}{
+  \path [ribbon, opacity=\o]
+       (gift box cs:x= 1.05, y=-\n, z=0.5)
+    -- (gift box cs:x= 1.05, y=-\n, z=1)
+    -- (gift box cs:x=-1.05, y=-\n, z=1)
+    -- (gift box cs:x=-1.05, y= \n, z=1)
+    -- (gift box cs:x= 1.05, y= \n, z=1)
+    -- (gift box cs:x= 1.05, y= \n, z=.5)
+    -- cycle;
+
+  \path [ribbon, opacity=\o]
+       (gift box cs:y= 1.05, x=-\n, z=0.5)
+    -- (gift box cs:y= 1.05, x=-\n, z=1)
+    -- (gift box cs:y=-1.05, x=-\n, z=1)
+    -- (gift box cs:y=-1.05, x= \n,  z=1)
+    -- (gift box cs:y= 1.05, x= \n, z=1)
+    -- (gift box cs:y= 1.05, x= \n, z=.5)
+    -- cycle;
+}
+
+
+\path [sheen]
+     (gift box cs:x=-1.05, y=1.05, z=1)
+  -- (gift box cs:x=-1.05, y=1.05, z=0.5)
+  -- (gift box cs:x= 1.05, y=1.05, z=0.5)
+  -- (gift box cs:x= 1.05, y=1.05, z=1)
+  -- cycle;
+
+\path [sheen]
+     (gift box cs:x=1.05, y=-1.05, z=1)
+  -- (gift box cs:x=1.05, y=-1.05, z=0.5)
+  -- (gift box cs:x=1.05, y= 1.05, z=0.5)
+  -- (gift box cs:x=1.05, y= 1.05, z=1)
+  -- cycle;
+
+\path [sheen]
+     (gift box cs:x=-1.05, y=-1.05, z=1)
+  -- (gift box cs:x=-1.05, y= 1.05, z=1)
+  -- (gift box cs:x= 1.05, y= 1.05, z=1)
+  -- (gift box cs:x= 1.05, y=-1.05, z=1)
+  -- cycle;
+
+\begin{scope}
+\path [clip]
+     (gift box cs:x=-1.05, y=-1.05, z=1)
+  -- (gift box cs:x=-1.05, y= 1.05, z=1)
+  -- (gift box cs:x=-1.05, y= 1.05, z=.5)
+  -- (gift box cs:x= 1.05, y= 1.05, z=.5)
+  -- (gift box cs:x= 1.05, y=-1.05, z=.5)
+  -- (gift box cs:x= 1.05, y=-1.05, z=1)
+  -- cycle;
+
+\foreach \l in {1,...,10}{
+  \path [highlight=\l/3] 
+       (gift box cs:x= 1.05, y= 1.05, z=1) 
+    -- (gift box cs:x= 1.05, y=-1.05, z=1) 
+    -- (gift box cs:x=-1.05, y=-1.05, z=1) 
+    -- (gift box cs:x=-1.05, y= 1.05, z=1)
+    -- cycle 
+       (gift box cs:x=1.05, y=1.05, z=1) 
+    -- (gift box cs:x=1.05, y=1.05, z=0.5);
+
+  \path [lowlight=\l/3]
+       (gift box cs:x=-1.05, y= 1.05, z=1) 
+    -- (gift box cs:x=-1.05, y= 1.05, z=.5)
+    -- (gift box cs:x= 1.05, y= 1.05, z=.5)
+    -- (gift box cs:x= 1.05, y=-1.05, z=.5)
+    -- (gift box cs:x= 1.05, y=-1.05, z=1);
+}
+\end{scope}
+\end{tikzpicture}
+\hspace{4cm}
+}
+
+
+\pgfmathsetseed{10}
+
+\newcommand{\randomcolor}{%
+    \pgfmathsetmacro{\H}{rnd}%
+    \definecolor{randomcol}{hsb}{\H,1,1}
+}
+
+
+\begin{document}
+
+\foreach \x in {0,...,20}{
+\randomcolor\colorlet{red}{randomcol}
+\randomcolor\colorlet{yellow}{randomcol}
+\gift
+}
+
+
+
+\end{document}

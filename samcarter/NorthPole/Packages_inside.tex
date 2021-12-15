@@ -1,0 +1,25 @@
+% Package code from https://tex.stackexchange.com/a/150675/36296
+
+\documentclass[border=0.125cm]{standalone}
+\usepackage{tikzlings}
+
+
+\newcommand{\gift}{
+\makebox[4.75cm]{
+\centering
+\begin{tikzpicture}
+\tikzling
+\end{tikzpicture}}
+\hspace{3.47cm}
+}
+
+
+
+\begin{document}
+\foreach \x in {0,...,20}{
+\gift
+}
+
+
+
+\end{document}

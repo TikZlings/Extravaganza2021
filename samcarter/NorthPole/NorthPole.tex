@@ -1,0 +1,27 @@
+\documentclass{beamer}
+
+\usepackage{tikzlings}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{background canvas}{\includegraphics[height=\paperheight]{Snowy_winter_landscape_-_Riisitunturi_National_Park_-_Posio,_Finland_-_14_March_2016.jpg}}
+
+\begin{document}
+	
+\begin{frame}
+  \begin{tikzpicture}[remember picture, overlay]
+    \penguin[santa,yshift=-3.9cm,xshift=1.5cm]
+    \begin{scope}
+      \clip (current page.south west) rectangle ++(6,3);
+      \node at (33-0.1*\thepage,-4) {\includegraphics[height=1.5cm]{Packages}};
+    \end{scope}
+    \begin{scope}
+      \clip (current page.south east) rectangle ++(-6,3);
+      \node at (33-0.1*\thepage,-4) {\includegraphics[height=1.08cm]{Packages_inside}};
+    \end{scope}    
+    \node at (6,-3.5) {\includegraphics[width=5cm]{wrapping}};   
+    \node[white,text width=.7\paperwidth,font=\tiny,align=center] at ([yshift=-0.35cm]current page.north) {Image source: \url{https://commons.wikimedia.org/wiki/File:Snowy_winter_landscape_-_Riisitunturi_National_Park_-_Posio,_Finland_-_14_March_2016.jpg}};  
+  \end{tikzpicture}
+%  \pause[600]
+\end{frame}	
+	
+\end{document}
