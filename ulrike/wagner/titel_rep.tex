@@ -1,0 +1,31 @@
+% !TeX TS-program = pdflatex
+\documentclass[xcolor={svgnames,x11names}]{beamer}
+
+\makeatletter
+\setlength\beamer@paperheight{12.096cm}%
+\geometry{papersize={\beamer@paperwidth,\beamer@paperheight}}
+\beamer@calculateheadfoot
+\makeatother
+
+\usepackage{tikzlings}
+\usepackage{tikzducks}
+\usepackage{pdfpages}
+\usetikzlibrary{positioning,shapes}
+\usetikzlibrary{overlay-beamer-styles}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+
+\setbeamertemplate{background canvas}{}
+\setbeamercolor{background canvas}{bg=}
+
+\foreach \x in {0,...,100}{
+\includepdf{walkuere-title}
+}
+
+
+
+
+\end{document}

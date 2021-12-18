@@ -1,0 +1,45 @@
+% !Mode:: "TeX:UTF-8:Main"
+% arara: pdflatex
+% rule is irgendwie kaputt ...
+% xarara: convert: {density: 160, otheroptions: -dispose previous -delay 60 -loop 0, format: gif}
+% magick -density 160 -delay 5 -loop 0 walkuere.pdf walkuere.gif
+% xarara: showfile: {format: gif}
+
+\documentclass{article}
+\usepackage{geometry}
+\geometry{papersize={12.096cm,12.096cm},margin=0.5cm}
+\usepackage[osf]{AlegreyaSans}
+\usepackage[svgnames,x11names]{xcolor}
+\usepackage{eso-pic,tikz,array}
+\graphicspath{{images/}}
+\begin{document}
+\AddToShipoutPictureBG{%
+ \AtPageLowerLeft{%
+ \begin{tikzpicture}[overlay,remember picture]
+ \fill[Seashell1] (0,0) rectangle (\paperwidth,\paperheight);
+ \end{tikzpicture}}}
+\LARGE\sffamily
+\bfseries\scshape
+\centering  A Tikzducks Production
+
+\fontsize{14.4}{16pt}\selectfont
+\bigskip
+
+\begin{tabular}{*{2}{>{\centering}p{0.44\linewidth}}}
+\multicolumn{2}{c}{Graphics, Animations, Video and Sound}\tabularnewline[5pt]
+SamCarter &  Ulrike Fischer \tabularnewline
+\vspace{0pt}\includegraphics[width=0.65\linewidth,keepaspectratio]{samcarter-avatar}
+&\vspace{0pt}\includegraphics[width=0.65\linewidth,keepaspectratio]{ulrike-avatar}
+\end{tabular}
+
+\medskip
+\begin{tabular}{*{2}{>{\centering}p{0.44\linewidth}}}
+Idea  &Music \tabularnewline
+\makebox[0pt][c]{Gert Fischer}      & Richard Wagner
+\tabularnewline
+\vspace{0pt}\includegraphics[width=0.65\linewidth,]{gert-avatar}
+&\vspace{0pt}\includegraphics[height=0.6\linewidth]{RichardWagner}
+
+\end{tabular}
+\end{document}
+

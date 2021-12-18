@@ -1,0 +1,15 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikzlings}
+
+\begin{document}
+
+\foreach \i in {0,...,100}{
+\begin{tikzpicture}
+\foreach \x in {0,...,10}{
+	\tikzling[xshift=5*\x cm]
+}
+\end{tikzpicture}
+}
+
+\end{document}
