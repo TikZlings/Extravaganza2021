@@ -1,0 +1,69 @@
+% arara: closeAR
+% arara: pdflatex
+% arara: pdflatex
+% arara: showfile
+\documentclass{beamer}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+
+\usepackage{halloweenmath}
+
+\setbeamertemplate{background canvas}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt, outer sep=0pt] at (current page.center) 
+      {\includegraphics[height=\paperheight]{{3-landschaft-natur-himmel.jpg}}};
+    \node at ([yshift=0.2cm]current page.south) 
+      {\color{white}\tiny Background image: \url{https://whereisthisfrom???:landschaft-natur-himmel.jpg}};
+  \end{tikzpicture}%
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\tikzset{%
+    pics/leftbat/.style={code={%  
+        \node[yellow, xscale=2.1, yscale=2.7] {$\mathleftbat$};
+        \node[scale=2] {$\mathleftbat$};
+    }},
+    pics/centralbat/.style={code={%              
+      \node[yellow, xscale=2.1, yscale=2.7] {$\mathbat$}; 
+      \node[scale=2]  {$\mathbat$};    
+    }},
+    pics/rightbat/.style={code={%  
+        \node[yellow, xscale=2.1, yscale=2.7] {$\mathrightbat$};
+        \node[scale=2] {$\mathrightbat$};
+    }},
+    decor/.style args={#1,#2}{%
+        decoration={
+            markings,
+            mark=
+            at position #1
+            with
+            {\pic {#2};}
+            },
+        postaction={decorate}
+    }
+}
+
+\begin{document}
+\foreach \x in {0,0.005,...,1}{%
+  \begin{frame}
+    \begin{tikzpicture}[remember picture, overlay]
+      \path[decor={\x,centralbat}] (.5\textwidth, 0) circle (1.5);
+      \path[decor={\x,rightbat}] (0,-3) 
+        to[in=180, out=0, looseness=.75] (0.25*\the\textwidth,-1)
+        to[in=180, out=0, looseness=.75] (.5*\the\textwidth,-3)
+        to[in=180, out=0, looseness=.75] (.75*\the\textwidth,-1)
+        to[in=180, out=0, looseness=.75] (\the\textwidth,-3)
+        ;
+      \path[decor={1-\x,leftbat}] (0,3) 
+        to[in=180, out=0, looseness=.75] (0.25*\the\textwidth,1)   
+        to[in=180, out=0, looseness=.75] (.5*\the\textwidth,3)
+        to[in=180, out=0, looseness=.75] (.75*\the\textwidth,1)
+        to[in=180, out=0, looseness=.75] (\the\textwidth,3)
+        ;
+    \end{tikzpicture}
+  \end{frame}%
+}
+\end{document}
+
