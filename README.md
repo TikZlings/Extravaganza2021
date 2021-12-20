@@ -14,6 +14,15 @@ The full video is available from ...
 
 - Source Code: [./samcarter/NorthPole/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/NorthPole)
 
+## Almost silent night
+
+<img align="right" src="./carlatex/almostsilentnight/almostsilentnight.png" height="100">
+
+- Topic: Bats gliding through the night
+
+- Music: https://youtu.be/Yy2uHAS-el0 Bach: Air / Koopman · Berliner Philharmoniker, 9 - 045
+
+- Source Code: [./carlatex/almostsilentnight/](https://github.com/samcarter/Extravaganza2021/tree/master/carlatex/almostsilentnight)
 
 # Ideas from last year
 
