@@ -24,6 +24,16 @@ The full video is available from ...
 
 - Source Code: [./carlatex/almostsilentnight/](https://github.com/samcarter/Extravaganza2021/tree/master/carlatex/almostsilentnight)
 
+## Silent night
+
+<img align="right" src="./ulrike/celloducks/celloducks.png" height="100">
+
+- Topic: Bats gliding through the night
+
+- Music: https://www.youtube.com/watch?v=uIqbE0Ylh9o
+
+- Source Code: [./ulrike/celloducks/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/celloducks)
+
 # Ideas from last year
 
 
