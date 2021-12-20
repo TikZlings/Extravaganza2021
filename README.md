@@ -28,7 +28,7 @@ The full video is available from ...
 
 <img align="right" src="./ulrike/cello/celloducks.png" height="100">
 
-- Topic: Bats gliding through the night
+- Topic: Celloplaying ducks
 
 - Music: https://www.youtube.com/watch?v=uIqbE0Ylh9o
 
