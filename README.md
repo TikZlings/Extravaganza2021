@@ -34,6 +34,16 @@ The full video is available from ...
 
 - Source Code: [./ulrike/cello/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/cello)
 
+## Brazilian Friend
+
+<img align="right" src="./samcarter/BrazilianFriend/BrazilianFriend.png" height="100">
+
+- Topic: Sloth hanging over a water fall
+
+- Music: Simon & Garfunkel - Bridge Over Troubled Water (Audio) - 2:09 -2:49 https://youtu.be/4G-YQA_bsOU
+
+- Source Code: [./samcarter/BrazilianFriend/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/BrazilianFriend)
+
 # Ideas from last year
 
 
