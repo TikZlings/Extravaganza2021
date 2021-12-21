@@ -54,6 +54,16 @@ The full video is available from ...
 
 - Source Code: [./ulrike/wagner/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/wagner)
 
+## Mice
+
+<img align="right" src="./samcarter/mouse/SingingMouse.png" height="100">
+
+- Topic: Singing Mice
+
+- Music: We wish you a Merry Christmas
+
+- Source Code: [./samcarter/mouse/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/mouse)
+
 # Ideas from last year
 
 
