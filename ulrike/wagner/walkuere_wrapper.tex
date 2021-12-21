@@ -1,0 +1,17 @@
+\documentclass{beamer}
+
+\usepackage{tikz}
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+\foreach \y in {1,...,4}{
+\foreach \x in {1,...,92}{
+\begin{frame}
+\begin{tikzpicture}[remember picture, overlay]
+\node at ([yshift=0.5cm]current page.center) {\includegraphics[width=\paperwidth,page=\x]{walkuere}};
+\end{tikzpicture}
+\end{frame}
+}}
+
+\end{document}

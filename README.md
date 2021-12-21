@@ -44,6 +44,16 @@ The full video is available from ...
 
 - Source Code: [./samcarter/BrazilianFriend/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/BrazilianFriend)
 
+## Valkyrie
+
+<img align="right" src="./ulrike/wagner/walkuere.png" height="100">
+
+- Topic: Valkyrie
+
+- Music: Ride of the Valkyries
+
+- Source Code: [./ulrike/wagner/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/wagner)
+
 # Ideas from last year
 
 
