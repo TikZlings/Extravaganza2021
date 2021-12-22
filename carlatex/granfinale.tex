@@ -1,0 +1,499 @@
+% arara: closeAR
+%! arara: pdflatex
+% arara: pdflatex
+% arara: showfile
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{tikzlings}
+
+\begin{document}
+% All TikZlings
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {-11.7,-9.2,...,5.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+    \end{tikzpicture}
+\end{frame}
+% One letter 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,-0.2,3.8,5.8,7.8,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,7.8,9.8,11.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[green, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,7.8,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[yellow, font=\Huge] at (2.9,-2.7) {P};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,7.8,9.8,11.8,13.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[blue, font=\Huge] at (7.9,-3.95) {A};
+    \end{tikzpicture}
+\end{frame}
+% Two letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,-0.2,3.8,5.8,7.8,9.8,11.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[green, font=\Huge] at (.9,2.3) {X};
+       \node[yellow, font=\Huge] at (6.9,2.3) {G};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,9.8,11.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[blue, font=\Huge] at (3.9,1.05) {2};
+       \node[green, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,1.8,3.8,7.8,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+         \node[yellow, font=\Huge] at (-.1,-2.7) {H};
+         \node[blue, font=\Huge] at (2.9,-2.7) {P};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,9.8,11.8,13.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+      \node[green, font=\Huge] at (3.9,-3.95) {O};
+      \node[yellow, font=\Huge] at (7.9,-3.95) {A};
+    \end{tikzpicture}
+\end{frame}
+% Three letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,-0.2,3.8,5.8,7.8,9.8,11.8,15.8,17.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (6.9,2.3) {G};
+       \node[yellow, font=\Huge] at (9.9,2.3) {Z};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,11.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[blue, font=\Huge] at (3.9,1.05) {2};
+       \node[green, font=\Huge] at (4.9,1.05) {0};
+       \node[yellow, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,1.8,3.8,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+         \node[blue, font=\Huge] at (-.1,-2.7) {H};
+         \node[green, font=\Huge] at (2.9,-2.7) {P};
+         \node[yellow, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,9.8,13.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+      \node[blue, font=\Huge] at (3.9,-3.95) {O};
+       \node[green, font=\Huge] at (5.9,-3.95) {I};
+      \node[yellow, font=\Huge] at (7.9,-3.95) {A};
+    \end{tikzpicture}
+\end{frame}
+% Four letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,-0.2,3.8,7.8,9.8,11.8,15.8,17.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (2.9,2.3) {R};
+       \node[yellow, font=\Huge] at (6.9,2.3) {G};
+       \node[blue, font=\Huge] at (9.9,2.3) {Z};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[green, font=\Huge] at (3.9,1.05) {2};
+       \node[yellow, font=\Huge] at (4.9,1.05) {0};
+       \node[blue, font=\Huge] at (5.9,1.05) {2};
+       \node[green, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,3.8,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[yellow, font=\Huge] at (-.1,-2.7) {H};
+       \node[blue, font=\Huge] at (.9,-2.7) {A};
+       \node[green, font=\Huge] at (2.9,-2.7) {P};
+       \node[yellow, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,9.8,13.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[blue, font=\Huge] at (2.9,-3.95) {H};
+       \node[green, font=\Huge] at (3.9,-3.95) {O};
+       \node[yellow, font=\Huge] at (5.9,-3.95) {I};
+       \node[blue, font=\Huge] at (7.9,-3.95) {A};
+    \end{tikzpicture}
+\end{frame}
+% Five letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,-0.2,3.8,7.8,11.8,15.8,17.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[green, font=\Huge] at (.9,2.3) {X};
+       \node[yellow, font=\Huge] at (2.9,2.3) {R};
+       \node[blue, font=\Huge] at (4.9,2.3) {V};
+       \node[green, font=\Huge] at (6.9,2.3) {G};
+       \node[yellow, font=\Huge] at (9.9,2.3) {Z};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[blue, font=\Huge] at (3.9,1.05) {2};
+       \node[green, font=\Huge] at (4.9,1.05) {0};
+       \node[yellow, font=\Huge] at (5.9,1.05) {2};
+       \node[blue, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[green, font=\Huge] at (-.1,-2.7) {H};
+       \node[yellow, font=\Huge] at (.9,-2.7) {A};
+       \node[blue, font=\Huge] at (1.9,-2.7) {P};
+       \node[green, font=\Huge] at (2.9,-2.7) {P};
+       \node[yellow, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,9.8,13.8,17.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[blue, font=\Huge] at (2.9,-3.95) {H};
+       \node[green, font=\Huge] at (3.9,-3.95) {O};
+       \node[yellow, font=\Huge] at (5.9,-3.95) {I};
+       \node[blue, font=\Huge] at (7.9,-3.95) {A};
+       \node[green, font=\Huge] at (9.9,-3.95) {S};
+    \end{tikzpicture}
+\end{frame}
+% Six letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,3.8,7.8,11.8,15.8,17.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[yellow, font=\Huge] at (-.1,2.3) {E};
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (2.9,2.3) {R};
+       \node[yellow, font=\Huge] at (4.9,2.3) {V};
+       \node[blue, font=\Huge] at (6.9,2.3) {G};
+       \node[green, font=\Huge] at (9.9,2.3) {Z};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[yellow, font=\Huge] at (3.9,1.05) {2};
+       \node[blue, font=\Huge] at (4.9,1.05) {0};
+       \node[green, font=\Huge] at (5.9,1.05) {2};
+       \node[yellow, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[blue, font=\Huge] at (-.1,-2.7) {H};
+       \node[green, font=\Huge] at (.9,-2.7) {A};
+       \node[yellow, font=\Huge] at (1.9,-2.7) {P};
+       \node[blue, font=\Huge] at (2.9,-2.7) {P};
+       \node[green, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,9.8,13.8,17.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[yellow, font=\Huge] at (2.9,-3.95) {H};
+       \node[blue, font=\Huge] at (3.9,-3.95) {O};
+       \node[green, font=\Huge] at (5.9,-3.95) {I};
+       \node[yellow, font=\Huge] at (7.9,-3.95) {A};
+       \node[blue, font=\Huge] at (9.9,-3.95) {S};
+       \node[green, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% Seven letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,3.8,7.8,11.8,17.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[yellow, font=\Huge] at (-.1,2.3) {E};
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (2.9,2.3) {R};
+       \node[yellow, font=\Huge] at (4.9,2.3) {V};
+       \node[blue, font=\Huge] at (6.9,2.3) {G};
+       \node[green, font=\Huge] at (7.9,2.3) {A};
+       \node[yellow, font=\Huge] at (9.9,2.3) {Z};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[blue, font=\Huge] at (3.9,1.05) {2};
+       \node[green, font=\Huge] at (4.9,1.05) {0};
+       \node[yellow, font=\Huge] at (5.9,1.05) {2};
+       \node[blue, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[green, font=\Huge] at (-.1,-2.7) {H};
+       \node[yellow, font=\Huge] at (.9,-2.7) {A};
+       \node[blue, font=\Huge] at (1.9,-2.7) {P};
+       \node[green, font=\Huge] at (2.9,-2.7) {P};
+       \node[yellow, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,9.8,17.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[blue, font=\Huge] at (2.9,-3.95) {H};
+       \node[green, font=\Huge] at (3.9,-3.95) {O};
+       \node[yellow, font=\Huge] at (5.9,-3.95) {I};
+       \node[blue, font=\Huge] at (6.9,-3.95) {D};
+       \node[green, font=\Huge] at (7.9,-3.95) {A};
+       \node[yellow, font=\Huge] at (9.9,-3.95) {S};
+       \node[blue, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% Eight letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,3.8,7.8,11.8,17.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[green, font=\Huge] at (-.1,2.3) {E};
+       \node[yellow, font=\Huge] at (.9,2.3) {X};
+       \node[blue, font=\Huge] at (2.9,2.3) {R};
+       \node[green, font=\Huge] at (4.9,2.3) {V};
+       \node[yellow, font=\Huge] at (6.9,2.3) {G};
+       \node[blue, font=\Huge] at (7.9,2.3) {A};
+       \node[green, font=\Huge] at (9.9,2.3) {Z};
+       \node[yellow, font=\Huge] at (10.9,2.3) {A};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[blue, font=\Huge] at (3.9,1.05) {2};
+       \node[green, font=\Huge] at (4.9,1.05) {0};
+       \node[yellow, font=\Huge] at (5.9,1.05) {2};
+       \node[blue, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[green, font=\Huge] at (-.1,-2.7) {H};
+       \node[yellow, font=\Huge] at (.9,-2.7) {A};
+       \node[blue, font=\Huge] at (1.9,-2.7) {P};
+       \node[green, font=\Huge] at (2.9,-2.7) {P};
+       \node[yellow, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,17.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[blue, font=\Huge] at (2.9,-3.95) {H};
+       \node[green, font=\Huge] at (3.9,-3.95) {O};
+       \node[yellow, font=\Huge] at (4.9,-3.95) {L};
+       \node[blue, font=\Huge] at (5.9,-3.95) {I};
+       \node[green, font=\Huge] at (6.9,-3.95) {D};
+       \node[yellow, font=\Huge] at (7.9,-3.95) {A};
+       \node[blue, font=\Huge] at (9.9,-3.95) {S};
+       \node[green, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% Nine letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,3.8,7.8,17.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[yellow, font=\Huge] at (-.1,2.3) {E};
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (2.9,2.3) {R};
+       \node[yellow, font=\Huge] at (4.9,2.3) {V};
+       \node[blue, font=\Huge] at (5.9,2.3) {A};
+       \node[green, font=\Huge] at (6.9,2.3) {G};
+       \node[yellow, font=\Huge] at (7.9,2.3) {A};
+       \node[blue, font=\Huge] at (9.9,2.3) {Z};
+       \node[green, font=\Huge] at (10.9,2.3) {A};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[yellow, font=\Huge] at (3.9,1.05) {2};
+       \node[blue, font=\Huge] at (4.9,1.05) {0};
+       \node[green, font=\Huge] at (5.9,1.05) {2};
+       \node[yellow, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[blue, font=\Huge] at (-.1,-2.7) {H};
+       \node[green, font=\Huge] at (.9,-2.7) {A};
+       \node[yellow, font=\Huge] at (1.9,-2.7) {P};
+       \node[blue, font=\Huge] at (2.9,-2.7) {P};
+       \node[green, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[yellow, font=\Huge] at (2.9,-3.95) {H};
+       \node[blue, font=\Huge] at (3.9,-3.95) {O};
+       \node[green, font=\Huge] at (4.9,-3.95) {L};
+       \node[yellow, font=\Huge] at (5.9,-3.95) {I};
+       \node[blue, font=\Huge] at (6.9,-3.95) {D};
+       \node[green, font=\Huge] at (7.9,-3.95) {A};
+       \node[yellow, font=\Huge] at (8.9,-3.95) {Y};
+       \node[blue, font=\Huge] at (9.9,-3.95) {S};
+       \node[green, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% Ten letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,7.8,17.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[yellow, font=\Huge] at (-.1,2.3) {E};
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (1.9,2.3) {T};
+       \node[yellow, font=\Huge] at (2.9,2.3) {R};
+       \node[blue, font=\Huge] at (4.9,2.3) {V};
+       \node[green, font=\Huge] at (5.9,2.3) {A};
+       \node[yellow, font=\Huge] at (6.9,2.3) {G};
+       \node[blue, font=\Huge] at (7.9,2.3) {A};
+       \node[green, font=\Huge] at (9.9,2.3) {Z};
+       \node[yellow, font=\Huge] at (10.9,2.3) {A};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[blue, font=\Huge] at (3.9,1.05) {2};
+       \node[green, font=\Huge] at (4.9,1.05) {0};
+       \node[yellow, font=\Huge] at (5.9,1.05) {2};
+       \node[blue, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[green, font=\Huge] at (-.1,-2.7) {H};
+       \node[yellow, font=\Huge] at (.9,-2.7) {A};
+       \node[blue, font=\Huge] at (1.9,-2.7) {P};
+       \node[green, font=\Huge] at (2.9,-2.7) {P};
+       \node[yellow, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[blue, font=\Huge] at (2.9,-3.95) {H};
+       \node[green, font=\Huge] at (3.9,-3.95) {O};
+       \node[yellow, font=\Huge] at (4.9,-3.95) {L};
+       \node[blue, font=\Huge] at (5.9,-3.95) {I};
+       \node[green, font=\Huge] at (6.9,-3.95) {D};
+       \node[yellow, font=\Huge] at (7.9,-3.95) {A};
+       \node[blue, font=\Huge] at (8.9,-3.95) {Y};
+       \node[green, font=\Huge] at (9.9,-3.95) {S};
+       \node[yellow, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% Eleven letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,7.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[blue, font=\Huge] at (-.1,2.3) {E};
+       \node[green, font=\Huge] at (.9,2.3) {X};
+       \node[yellow, font=\Huge] at (1.9,2.3) {T};
+       \node[blue, font=\Huge] at (2.9,2.3) {R};
+       \node[green, font=\Huge] at (4.9,2.3) {V};
+       \node[yellow, font=\Huge] at (5.9,2.3) {A};
+       \node[blue, font=\Huge] at (6.9,2.3) {G};
+       \node[green, font=\Huge] at (7.9,2.3) {A};
+       \node[yellow, font=\Huge] at (8.9,2.3) {N};
+       \node[blue, font=\Huge] at (9.9,2.3) {Z};
+       \node[green, font=\Huge] at (10.9,2.3) {A};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[yellow, font=\Huge] at (3.9,1.05) {2};
+       \node[blue, font=\Huge] at (4.9,1.05) {0};
+       \node[green, font=\Huge] at (5.9,1.05) {2};
+       \node[yellow, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[blue, font=\Huge] at (-.1,-2.7) {H};
+       \node[green, font=\Huge] at (.9,-2.7) {A};
+       \node[yellow, font=\Huge] at (1.9,-2.7) {P};
+       \node[blue, font=\Huge] at (2.9,-2.7) {P};
+       \node[green, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[yellow, font=\Huge] at (2.9,-3.95) {H};
+       \node[blue, font=\Huge] at (3.9,-3.95) {O};
+       \node[green, font=\Huge] at (4.9,-3.95) {L};
+       \node[yellow, font=\Huge] at (5.9,-3.95) {I};
+       \node[blue, font=\Huge] at (6.9,-3.95) {D};
+       \node[green, font=\Huge] at (7.9,-3.95) {A};
+       \node[yellow, font=\Huge] at (8.9,-3.95) {Y};
+       \node[blue, font=\Huge] at (9.9,-3.95) {S};
+       \node[green, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% All letters 
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[yellow, font=\Huge] at (-.1,2.3) {E};
+       \node[blue, font=\Huge] at (.9,2.3) {X};
+       \node[green, font=\Huge] at (1.9,2.3) {T};
+       \node[yellow, font=\Huge] at (2.9,2.3) {R};
+       \node[blue, font=\Huge] at (3.9,2.3) {A};
+       \node[green, font=\Huge] at (4.9,2.3) {V};
+       \node[yellow, font=\Huge] at (5.9,2.3) {A};
+       \node[blue, font=\Huge] at (6.9,2.3) {G};
+       \node[green, font=\Huge] at (7.9,2.3) {A};
+       \node[yellow, font=\Huge] at (8.9,2.3) {N};
+       \node[blue, font=\Huge] at (9.9,2.3) {Z};
+       \node[green, font=\Huge] at (10.9,2.3) {A};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[yellow, font=\Huge] at (3.9,1.05) {2};
+       \node[blue, font=\Huge] at (4.9,1.05) {0};
+       \node[green, font=\Huge] at (5.9,1.05) {2};
+       \node[yellow, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[blue, font=\Huge] at (-.1,-2.7) {H};
+       \node[green, font=\Huge] at (.9,-2.7) {A};
+       \node[yellow, font=\Huge] at (1.9,-2.7) {P};
+       \node[blue, font=\Huge] at (2.9,-2.7) {P};
+       \node[green, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[yellow, font=\Huge] at (2.9,-3.95) {H};
+       \node[blue, font=\Huge] at (3.9,-3.95) {O};
+       \node[green, font=\Huge] at (4.9,-3.95) {L};
+       \node[yellow, font=\Huge] at (5.9,-3.95) {I};
+       \node[blue, font=\Huge] at (6.9,-3.95) {D};
+       \node[green, font=\Huge] at (7.9,-3.95) {A};
+       \node[yellow, font=\Huge] at (8.9,-3.95) {Y};
+       \node[blue, font=\Huge] at (9.9,-3.95) {S};
+       \node[green, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+% All letters red
+\begin{frame}
+    \begin{tikzpicture}[overlay, remember picture]
+      \foreach \x in {-2.2,-.2,...,23.8}
+        \foreach \y in {5.8,-1.7,-4.2,-11.7}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=\y cm]}
+      \foreach \x in {-2.2,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=3.3 cm]}
+       \node[red, font=\Huge] at (-.1,2.3) {E};
+       \node[red, font=\Huge] at (.9,2.3) {X};
+       \node[red, font=\Huge] at (1.9,2.3) {T};
+       \node[red, font=\Huge] at (2.9,2.3) {R};
+       \node[red, font=\Huge] at (3.9,2.3) {A};
+       \node[red, font=\Huge] at (4.9,2.3) {V};
+       \node[red, font=\Huge] at (5.9,2.3) {A};
+       \node[red, font=\Huge] at (6.9,2.3) {G};
+       \node[red, font=\Huge] at (7.9,2.3) {A};
+       \node[red, font=\Huge] at (8.9,2.3) {N};
+       \node[red, font=\Huge] at (9.9,2.3) {Z};
+       \node[red, font=\Huge] at (10.9,2.3) {A};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,5.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=0.8 cm]}
+       \node[red, font=\Huge] at (3.9,1.05) {2};
+       \node[red, font=\Huge] at (4.9,1.05) {0};
+       \node[red, font=\Huge] at (5.9,1.05) {2};
+       \node[red, font=\Huge] at (6.9,1.05) {1};
+       \foreach \x in {-2.2,9.8,11.8,13.8,15.8,17.8,19.8,21.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-6.7 cm]}
+       \node[red, font=\Huge] at (-.1,-2.7) {H};
+       \node[red, font=\Huge] at (.9,-2.7) {A};
+       \node[red, font=\Huge] at (1.9,-2.7) {P};
+       \node[red, font=\Huge] at (2.9,-2.7) {P};
+       \node[red, font=\Huge] at (3.9,-2.7) {Y};
+       \foreach \x in {-2.2,-0.2,1.8,3.8,23.8}
+          {\tikzling[scale=.5, xshift=\x cm, yshift=-9.2 cm]}
+       \node[red, font=\Huge] at (2.9,-3.95) {H};
+       \node[red, font=\Huge] at (3.9,-3.95) {O};
+       \node[red, font=\Huge] at (4.9,-3.95) {L};
+       \node[red, font=\Huge] at (5.9,-3.95) {I};
+       \node[red, font=\Huge] at (6.9,-3.95) {D};
+       \node[red, font=\Huge] at (7.9,-3.95) {A};
+       \node[red, font=\Huge] at (8.9,-3.95) {Y};
+       \node[red, font=\Huge] at (9.9,-3.95) {S};
+       \node[red, font=\Huge] at (10.9,-3.95) {!};
+    \end{tikzpicture}
+\end{frame}
+\end{document}
