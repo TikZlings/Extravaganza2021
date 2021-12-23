@@ -64,6 +64,16 @@ The full video is available from ...
 
 - Source Code: [./samcarter/mouse/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/mouse)
 
+## Finale
+
+<img align="right" src="./carlatex/finale/granfinale.png" height="100">
+
+- Topic: Grand finale
+
+- Music: ABBA - Happy New Year (Video) - Bing Video 0:47 1:10 https://youtu.be/3Uo0JAUWijM
+
+- Source Code: [./carlatex/finale/](https://github.com/samcarter/Extravaganza2021/tree/master/carlatex/finale)
+
 # Ideas from last year
 
 
