@@ -73,13 +73,13 @@ repeatconvert(){
 
 # Converting
 #convert2video NorthPole "North Pole"
-#convert2video almostsilentnight "Almost silent night"
+#convert2video almostsilentnight "(almost) Silent Night"
 #convert2video cello "Silent Night"
 #convert2video BrazilianFriend "Brazilian Friend"
 #convert2video wagner "Ride of the Valkyries"
 #convert2video mice "Merry Christmas"
 #convert2video finale "Grand Finale"
 
-repeatconvert title "../samcarter/title/extravaganza-titlepage.pdf" 100
-#repeatconvert credits "../ulrike/intermission/extravaganza-2020-credits.pdf" 175
+#repeatconvert title "../samcarter/title/extravaganza-titlepage.pdf" 100
+repeatconvert credits "../samcarter/title/extravaganza-credits.pdf" 175
 

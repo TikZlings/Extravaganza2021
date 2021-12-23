@@ -24,16 +24,6 @@ The full video is available from ...
 
 - Source Code: [./carlatex/almostsilentnight/](https://github.com/samcarter/Extravaganza2021/tree/master/carlatex/almostsilentnight)
 
-## Silent night
-
-<img align="right" src="./ulrike/cello/celloducks.png" height="100">
-
-- Topic: Celloplaying ducks
-
-- Music: https://www.youtube.com/watch?v=uIqbE0Ylh9o
-
-- Source Code: [./ulrike/cello/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/cello)
-
 ## Brazilian Friend
 
 <img align="right" src="./samcarter/BrazilianFriend/BrazilianFriend.png" height="100">
@@ -43,6 +33,16 @@ The full video is available from ...
 - Music: Simon & Garfunkel - Bridge Over Troubled Water (Audio) - 2:09 -2:49 https://youtu.be/4G-YQA_bsOU
 
 - Source Code: [./samcarter/BrazilianFriend/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/BrazilianFriend)
+
+## Silent night
+
+<img align="right" src="./ulrike/cello/celloducks.png" height="100">
+
+- Topic: Celloplaying ducks
+
+- Music: https://www.youtube.com/watch?v=uIqbE0Ylh9o
+
+- Source Code: [./ulrike/cello/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/cello)
 
 ## Valkyrie
 
