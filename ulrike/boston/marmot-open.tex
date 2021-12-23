@@ -1,0 +1,35 @@
+% !Mode:: "TeX:DE:UTF-8:Main"
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikzlings-marmots}
+\colorlet{micro}{white}
+\tikzset{
+  pics/microph/.style={code={
+        \draw[micro, line width=.2em, rounded corners=1.7ex]
+            (-.85em,4.5ex) -- (-.85em,2ex) -- (.85em,2ex) -- (.85em,4.5ex);
+        \fill[micro]
+            (-.6em,5ex) to[rounded corners=1.2ex]
+            (-.6em,2.5ex) to[rounded corners=1.2ex] (.6em,2.5ex)
+            -- (.6em,5ex) to[rounded corners=.2ex] ++(-.85em,0) to[rounded corners=.2ex] ++(0,.35ex) -- ++(.85em,0)
+            -- (.6em,5.5ex) to[rounded corners=.2ex] ++(-.85em,0) to[rounded corners=.2ex] ++(0,.35ex) -- ++(.85em,0)
+            -- (.6em,6ex) to[rounded corners=.2ex] ++(-.85em,0) to[rounded corners=.2ex] ++(0,.35ex) -- ++(.85em,0)
+            -- (.6em,6.5ex) to[rounded corners=.2ex] ++(-.85em,0) to[rounded corners=.2ex] ++(0,.35ex) -- ++(.85em,0)
+            to[rounded corners=1.2ex]
+            (.6em,8ex) to[rounded corners=1.2ex]
+            (-.6em,8ex) to cycle;
+    }},
+}
+\begin{document}
+\begin{tikzpicture}
+
+\marmot[scale=1.5]
+\fill[draw=brown!30!black,fill=brown,line width=0.4pt,scale=1.5] (0.145,1.51) arc [start angle=-20, end angle=-160, radius=0.16] -- cycle;
+\begin{scope}[shift={(-2.8,6.5)}%,overlay
+]
+\pic[rotate=40] at (4.5,-5) {microph};
+\draw[micro, line width=2pt]
+(4.51,-4.98)
+-- ++(-.2,+.2) -- ++(.2,-.2) -- ++(0,-1.5);
+\end{scope}
+\end{tikzpicture}
+\end{document}
