@@ -54,6 +54,16 @@ The full video is available from ...
 
 - Source Code: [./ulrike/wagner/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/wagner)
 
+## Boston
+
+<img align="right" src="./ulrike/boston/boston.png" height="100">
+
+- Topic: Boston Skyline
+
+- Music: Bee Gees - Massachusetts (1967) 00:49 - 1:05 - 1:20 https://youtu.be/Qk7_F1TNEFg
+
+- Source Code: [./ulrike/boston/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/boston)
+
 ## Mice
 
 <img align="right" src="./samcarter/mouse/SingingMouse.png" height="100">
