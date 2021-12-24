@@ -77,8 +77,10 @@ repeatconvert(){
 #convert2video cello "Silent Night"
 #convert2video BrazilianFriend "Brazilian Friend"
 #convert2video wagner "Ride of the Valkyries"
+convert2video boston "Boston"
 #convert2video mice "Merry Christmas"
 #convert2video finale "Grand Finale"
+
 
 #repeatconvert title "../samcarter/title/extravaganza-titlepage.pdf" 100
 repeatconvert credits "../samcarter/title/extravaganza-credits.pdf" 175
