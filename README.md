@@ -1,8 +1,10 @@
 # The Great TikZlings Christmas Extravaganza 2021
 
-This repository contains the souce code of the Great TikZlings Extravanganza 2021, created by ...
+This repository contains the souce code of the Great TikZlings Extravanganza 2021, created by [Ulrike](https://github.com/u-fischer) & Gert Fischer, [Carla Maggi](https://github.com/CarLaTeX), [Paulo Cereda](https://github.com/cereda) and [samcarter](https://github.com/samcarter).
 
-The full video is available from ...
+The full video is available from https://vimeo.com/660399886
+
+[![](./samcarter/title/title.png)](https://vimeo.com/660399886)
 
 ## North Pole
 
