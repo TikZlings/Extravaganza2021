@@ -14,7 +14,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: https://www.youtube.com/watch?v=tyTOCC_88jw (Santa's First Rush (Cinematic Christmas Adventure) by soundbay)
 
-- Source Code: [./samcarter/NorthPole/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/NorthPole)
+- Source Code: [./samcarter/NorthPole/](https://github.com/TikZlings/Extravaganza2021/tree/main/samcarter/NorthPole)
 
 ## Almost silent night
 
@@ -24,7 +24,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: https://youtu.be/Yy2uHAS-el0 Bach: Air / Koopman · Berliner Philharmoniker, 9 - 045
 
-- Source Code: [./carlatex/almostsilentnight/](https://github.com/samcarter/Extravaganza2021/tree/master/carlatex/almostsilentnight)
+- Source Code: [./carlatex/almostsilentnight/](https://github.com/TikZlings/Extravaganza2021/tree/main/carlatex/almostsilentnight)
 
 ## A long way from home
 
@@ -34,7 +34,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: "It's A Long Way To Tipperary"; 0:27 - 100 https://youtu.be/ztwNogPha6I
 
-- Source Code: [./ulrike/tipperary/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/tipperary)
+- Source Code: [./ulrike/tipperary/](https://github.com/TikZlings/Extravaganza2021/tree/main/ulrike/tipperary)
 
 ## Brazilian Friend
 
@@ -44,7 +44,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: Simon & Garfunkel - Bridge Over Troubled Water (Audio) - 2:09 -2:49 https://youtu.be/4G-YQA_bsOU
 
-- Source Code: [./samcarter/BrazilianFriend/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/BrazilianFriend)
+- Source Code: [./samcarter/BrazilianFriend/](https://github.com/TikZlings/Extravaganza2021/tree/main/samcarter/BrazilianFriend)
 
 ## Silent night
 
@@ -54,7 +54,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: https://www.youtube.com/watch?v=uIqbE0Ylh9o
 
-- Source Code: [./ulrike/cello/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/cello)
+- Source Code: [./ulrike/cello/](https://github.com/TikZlings/Extravaganza2021/tree/main/ulrike/cello)
 
 ## Valkyrie
 
@@ -64,7 +64,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: Ride of the Valkyries
 
-- Source Code: [./ulrike/wagner/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/wagner)
+- Source Code: [./ulrike/wagner/](https://github.com/TikZlings/Extravaganza2021/tree/main/ulrike/wagner)
 
 ## Boston
 
@@ -74,7 +74,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: Bee Gees - Massachusetts (1967) 00:49 - 1:05 - 1:20 https://youtu.be/Qk7_F1TNEFg
 
-- Source Code: [./ulrike/boston/](https://github.com/samcarter/Extravaganza2021/tree/master/ulrike/boston)
+- Source Code: [./ulrike/boston/](https://github.com/TikZlings/Extravaganza2021/tree/main/ulrike/boston)
 
 ## Mice
 
@@ -84,7 +84,7 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: We wish you a Merry Christmas
 
-- Source Code: [./samcarter/mouse/](https://github.com/samcarter/Extravaganza2021/tree/master/samcarter/mouse)
+- Source Code: [./samcarter/mouse/](https://github.com/TikZlings/Extravaganza2021/tree/main/samcarter/mouse)
 
 ## Finale
 
@@ -94,4 +94,4 @@ The full video is available from https://vimeo.com/660399886
 
 - Music: ABBA - Happy New Year (Video) - Bing Video 0:47 1:10 https://youtu.be/3Uo0JAUWijM
 
-- Source Code: [./carlatex/finale/](https://github.com/samcarter/Extravaganza2021/tree/master/carlatex/finale)
+- Source Code: [./carlatex/finale/](https://github.com/TikZlings/Extravaganza2021/tree/main/carlatex/finale)
